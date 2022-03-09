@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="pronouncing-browser.js"></script>
+    <script src="words.js"></script>
+    <script src="script.js"></script>
+    <title>Rhyme Time Helper</title>
+
+    <style>
+      .input {
+        margin-bottom: 2rem;
+        padding: 4px;
+        font-size: 1.25rem;
+      }
+      
+      .result {
+        padding: 1rem;
+        border-bottom: 1px solid #ddd;
+        display: flex;
+        justify-content: center;
+      }
+      
+      .words {
+        margin-right: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="display: flex; justify-content: center">
+      <div>
+        <h3>Enter words below, using * to represent a blank space!</h3>
+        <input placeholder="Word 1" id="input-1" class="input" value="sh***"/>
+        <input placeholder="Word 2" id="input-2" class="input" value="c*r*"/>
+        <input placeholder="Word 3" id="input-3" class="input" value="h***"/>
+        <button id="submit-btn">Go!</button>
+      </div>
+    </div>
+    <div id="output">
+      
+    </div>
+  </body>
+</html>
